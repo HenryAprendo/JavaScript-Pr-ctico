@@ -8,7 +8,25 @@
 </head>
 <body>
   <main>
-    <h1>Figuras Geometricas</h1>
+    <header>
+      <h1>Figuras Geometricas</h1>
+      <p>Primer taller del curso práctico de JavaScript</p>
+    </header>
+
+    <section>
+      <h2>Calcula el area y perimetro de un cuadrado</h2>
+      <form action="">
+        <label for="InputCuadrado">Cuanto mide cada lado de tu cuadrado</label>
+        <input type="number" id="InputCuadrado">
+        <button type="button" onclick="calcularPerimetroCuadrado()">
+          Calcula el perimetro
+        </button>
+        <button type="button" onclick="calcularAreaCuadrado()">
+          Calcula el area
+        </button>
+      </form>
+    </section>
+
   </main>
   <script src="./figuras.js">
 
