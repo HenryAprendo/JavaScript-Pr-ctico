@@ -6,3 +6,4 @@
 - Segundo paso: Codificar en JS
 - Tercer paso: Implementar funciones
 - Cuarto paso: Integrar JS con HTML
+- Quinto paso: Dar estilos con CSS
