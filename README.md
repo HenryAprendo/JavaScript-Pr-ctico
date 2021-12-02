@@ -7,3 +7,5 @@
 - Tercer paso: Implementar funciones
 - Cuarto paso: Integrar JS con HTML
 - Quinto paso: Dar estilos con CSS
+- Sexto paso: Desplegar en Github Page
+- Septimo paso: Nueva versión y mantenimiento.

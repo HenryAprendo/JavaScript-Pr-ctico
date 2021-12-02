@@ -61,9 +61,7 @@ function calcularPerimetroTriangulo(){
     const valueDos = parseInt(inputLadoDos.value);
     const inputBase = document.getElementById("InputBase");
     const valueTres = parseInt(inputBase.value);
-    const inputAltura = document.getElementById("InputAltura");
-    const altura = parseInt(inputAltura.value);
-    
+  
     const perimetro = perimetroTriangulo(valueUno, valueDos, valueTres);
     alert(perimetro);
 
@@ -97,6 +95,42 @@ function calcularAreaCircunferencia(){
     const area =  areaCirculo(radio);
     alert(area);
 }
+
+
+function  calcularAlturaIsosceles(lado, base){
+    const alturatriangulo =  Math.sqrt((lado * lado) - (base * base / 4));
+    return alturatriangulo;
+}
+
+
+function calcularAlturaTriangulo(){
+    const lado1 = document.getElementById("Lado1");
+    const value1 = parseInt(lado1.value);
+    const lado2 = document.getElementById("Lado2");
+    const value2 = parseInt(lado2.value);
+    const base = document.getElementById("Base");
+    const value3 = parseInt(base.value);
+
+    if (value1 === value2){
+       var altoTriangulo = calcularAlturaIsosceles(value1, value3);
+    }
+    else{
+        alert("No es un triangulo Isosceles");
+    }
+
+    alert("altura:" + altoTriangulo);
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
