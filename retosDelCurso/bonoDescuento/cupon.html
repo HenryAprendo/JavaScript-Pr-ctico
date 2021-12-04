@@ -19,9 +19,11 @@
         <label for="Inputdiscount">Escribe el porcentaje de descuento</label>
         <input type="number" id="Inputdiscount">
         <label for="cupon">Ingresa el codigo de tu cupón</label>
-        <input type="number" id="cupon">
-        <button type="button">Calcular el precio a pagar</button>
+        <input type="text" id="cupon">
+        <button type="button" onclick="calcularPrecioProducto()">Calcular el precio a pagar</button>
       </form>
+
+      <p id="resultado"></p>
     </section>
 
     <script src="./cupon.js"></script>
