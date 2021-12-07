@@ -1,3 +1,4 @@
+let salarios = [];
 
 function calcularMediaAritmetica(lista){
 /* let sumaLista = 0;
@@ -10,5 +11,18 @@ const sumaLista = lista.reduce(
     }
 );
 const promedioLista = sumaLista / lista.length;
-return console.log(promedioLista);
+return promedioLista;
+}
+
+function agregarSalarios(){
+    const inputNumber = document.getElementById("salarios");
+    const inputValue = Number(inputNumber.value);
+    salarios.push(inputValue);
+}
+
+function calcularPromedioSalarios(){
+    const promedio = calcularMediaAritmetica(salarios);
+    const promedioSalarios = document.getElementById("promedioSalida");
+    promedioSalarios.innerText = `El promedio de salarios de la lista es $ ${promedio}`;
+
 }
