@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main {
+    margin-top: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:lavender;
+    height: 100vh;
+}
+
+main .main-cuadrado {
+    margin-bottom: 30px;
+}
+main .main-cuadrado form {
+    margin-top: 5px;
+}
+.main-cuadrado .main-cuadrado-form input {
+    height: 30px;
+    outline: none;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color:mintcream;
+}
+.main-cuadrado .main-cuadrado-form button {
+    height: 30px;
+    margin-right: 10px;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: none;
+    background-color:steelblue;
+    color:whitesmoke;
+    font-weight: bold;
+}
+/*Circulo*/
+main .main-circulo {
+    margin-bottom: 30px;
+}
+main .main-circulo-form {
+    margin-top: 5px;
+}
+.main-circulo .main-circulo-form input {
+    height: 30px;
+    outline: none;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color:mintcream;
+}
+.main-circulo .main-circulo-form button {
+    height: 30px;
+    margin-right: 10px;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: none;
+    background-color:steelblue;
+    color:whitesmoke;
+    font-weight: bold;
+}
+/*Triangulo*/
+main .main-triangulo {
+    margin-bottom: 30px;
+}
+main .main-triangulo-form {
+    margin-top: 5px;
+}
+.main-triangulo .main-triangulo-form input {
+    height: 30px;
+    outline: none;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color:mintcream;
+}
+.main-triangulo .main-triangulo-form button {
+    height: 30px;
+    margin-right: 10px;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: none;
+    background-color:steelblue;
+    color:whitesmoke;
+    font-weight: bold;
+}
+/*Isosceles*/
+main .main-isosceles {
+    margin-bottom: 30px;
+}
+main .main-isosceles-form {
+    margin-top: 5px;
+}
+.main-isosceles .main-isosceles-form input {
+    height: 30px;
+    outline: none;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color:mintcream;
+}
+.main-isosceles .main-isosceles-form button {
+    height: 30px;
+    margin-right: 10px;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: none;
+    background-color:steelblue;
+    color:whitesmoke;
+    font-weight: bold;
+}
+main section button:hover {
+    box-shadow: 0 1px 1px 1px #000001;
+}

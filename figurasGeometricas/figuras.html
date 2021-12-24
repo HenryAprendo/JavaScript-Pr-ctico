@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Figuras Geométricas | JS práctico</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header>
@@ -12,9 +13,9 @@
     <p>Primer taller del curso práctico de JavaScript</p>
   </header>
   <main>
-    <section>
+    <section class="main-cuadrado">
       <h2>Calcula el área y perímetro de un cuadrado</h2>
-      <form action="">
+      <form action="" class="main-cuadrado-form">
         <label for="InputCuadrado">Cuánto mide cada lado de tu cuadrado</label>
         <input type="number" id="InputCuadrado">
         <button type="button" onclick="calcularPerimetroCuadrado()">Calcula el perímetro</button>
@@ -22,9 +23,19 @@
       </form>
     </section>
 
-    <section>
+    <section class="main-circulo">
+      <h2>Calcula el área y el perímetro de la circunferencia</h2>
+      <form action="" class="main-circulo-form">
+        <label for="InputRadio">Cuánto mide el radio de la circunferencia</label>
+        <input type="number" id="InputRadio">
+        <button type="button" onclick="calcularPerimetroCircunferencia()">Calcula el perímetro</button>
+        <button type="button" onclick="calcularAreaCircunferencia()">Calcula el área</button>
+      </form>     
+    </section>
+
+    <section class="main-triangulo">
       <h2>Calcula el área y perímetro de un triangulo</h2>
-      <form action="">
+      <form action="" class="main-triangulo-form">
         <label for="InputLado1">Lado uno</label>
         <input type="number" id="InputLado1">
         <label for="InputLado2">Lado dos</label>
@@ -38,19 +49,9 @@
       </form>
     </section>
     
-    <section>
-      <h2>Calcula el área y el perímetro de la circunferencia</h2>
-      <form action="">
-        <label for="InputRadio">Cuánto mide el radio de la circunferencia</label>
-        <input type="number" id="InputRadio">
-        <button type="button" onclick="calcularPerimetroCircunferencia()">Calcula el perímetro</button>
-        <button type="button" onclick="calcularAreaCircunferencia()">Calcula el área</button>
-      </form>     
-    </section>
-    
-    <section>
+    <section class="main-isosceles">
       <h2>Calcula la altura de un triangulo isosceles</h2>
-      <form action="">
+      <form action="" class="main-isosceles-form">
         <label for="Lado1">Lado uno</label>
         <input type="number" id="Lado1">
         <label for="Lado2">Lado dos</label>
@@ -58,10 +59,19 @@
         <label for="Base">Base</label>
         <input type="number" id="Base">
         <button type="button" onclick="calcularAlturaTriangulo()">Calcula la altura</button>
-       
       </form>
     </section>
 
+    <section class="main-resultado">
+      <h3>Mira aquí el resultado</h3>
+      <div>
+        <p id="resultadoP"></p>
+      </div>
+      <div>
+        <p id="resultadoA"></p>
+      </div>        
+    </section>
+   
   </main>
   <script src="./figuras.js"> </script> 
 </body>

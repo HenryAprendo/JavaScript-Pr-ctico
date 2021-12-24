@@ -1,3 +1,6 @@
+const resultado = document.getElementById('resultadoP');
+const resultadoA = document.getElementById('resultadoA');
+
 //Codigo del cuadrado
 function perimetroCuadrado(lado){
     return lado * 4;
@@ -43,14 +46,16 @@ function calcularPerimetroCuadrado(){
     const input = document.getElementById("InputCuadrado");
     const value = input.value;    
     const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
+   
+    resultado.innerText = `El perímetro del cuadrado es: ${perimetro} cm`;
 }
 
 function calcularAreaCuadrado(){
     const input = document.getElementById("InputCuadrado");
     const value = input.value;    
     const area = areaCuadrado(value);
-    alert(area);
+    
+    resultadoA.innerText = `El área del cuadrado es: ${area} cm^2`;
 }
 
 //Triangulo
@@ -63,7 +68,8 @@ function calcularPerimetroTriangulo(){
     const valueTres = parseInt(inputBase.value);
   
     const perimetro = perimetroTriangulo(valueUno, valueDos, valueTres);
-    alert(perimetro);
+    
+    resultado.innerText = `El perimetro del triangulo es: ${perimetro} cm`;
 
 }
 
@@ -74,7 +80,8 @@ function calcularAreaTriangulo(){
     const altura = parseInt(inputAltura.value);
     
     const area = areaTriangulo(valueTres, altura);
-    alert(area);
+    
+    resultadoA.innerText = `El área del triangulo es: ${area} cm^2`;
 
 }
 
@@ -84,7 +91,8 @@ function calcularPerimetroCircunferencia(){
     const radio = parseInt(inputRadio.value);
 
     const perimetro =  perimetroCirculo(radio);
-    alert(perimetro);
+    
+    resultado.innerText = `El perímetro del circulo es: ${perimetro} cm`;
 }
 
 
@@ -93,7 +101,8 @@ function calcularAreaCircunferencia(){
     const radio = parseInt(inputRadio.value);
 
     const area =  areaCirculo(radio);
-    alert(area);
+    
+    resultadoA.innerText = `El área del circulo es: ${area} cm^2`;
 }
 
 
@@ -112,13 +121,12 @@ function calcularAlturaTriangulo(){
     const value3 = parseInt(base.value);
 
     if (value1 === value2){
-       var altoTriangulo = calcularAlturaIsosceles(value1, value3);
+       let altoTriangulo = calcularAlturaIsosceles(value1, value3);
+       resultado.innerText = `La altura del triangulo es: ${altoTriangulo} cm`;
     }
     else{
-        alert("No es un triangulo Isosceles");
+        resultado.innerText = `No es un triangulo isosceles`;
     }
-
-    alert("altura:" + altoTriangulo);
 
 }
 
