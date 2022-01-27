@@ -15,28 +15,16 @@ function onClickButtonPriceDiscount(){
     const precioConDescuento = calcularPrecioConDescuento(priceValue, discountValue);
 
     const resultP = document.getElementById("ResultP");
-    resultP.innerText = "El precio con descuento son: $" + precioConDescuento;
+    resultP.value = "$ " + precioConDescuento;
 
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-// console.log({
-    // precioOriginal,
-    // descuento,
-//   porcentajePrecioConDescuento,
-    // precioConDescuento,
-// });
+let limpiar = document.querySelector("#btn");
+limpiar.addEventListener("click", function(evento){
+    evento.preventDefault();
+    let formulario = document.querySelector(".formulario");
+    formulario.reset();
+});
 
 

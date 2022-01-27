@@ -5,25 +5,39 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Porcentajes y descuentos</title>
+  <link rel="stylesheet" href="./descuento.css">
 </head>
 <body>
   <header>
     <h1>Porcentajes y descuentos</h1>
   </header>
-  <section>
-    <h1>Calcula el precio a pagar en tus productos con descuento</h1>
+  <main>
 
-    <form action="">
-      <label for="InputPrice">Escribe el precio de tu producto:</label>
-      <input id="InputPrice" type="number">
-      <label for="InputDiscount">Escribe el descuento de tu producto:</label>
-      <input id="InputDiscount" type="number">
-      <button type="button" onclick="onClickButtonPriceDiscount()">Calcular el precio de descuento</button>
-      <p id="ResultP"></p>
-    </form>
+    <section>
+      <h1 class="subtitulo">Calcula el precio a pagar en tus productos con descuento (%)</h1>
 
+      <form action="" class="formulario">
+        <div class="content">
+          <label for="InputPrice">Escribe el precio de tu producto:</label>
+          <input id="InputPrice" type="number" class="entrada">
+        </div>
+        <div class="content">
+          <label for="InputDiscount">Escribe el descuento de tu producto:</label>
+          <input id="InputDiscount" type="number" class="entrada">
+        </div>
+        <div class="content">
+          <label for="ResultP">El precio con descuento es:</label>
+          <input id="ResultP" type="text" class="entrada"></input>
+        </div>
+        <div class="content">
+          <button type="button" class="boton" id="btn">Limpiar</button>
+          <button type="button" class="boton" onclick="onClickButtonPriceDiscount()">Calcular el precio de descuento</button>
+        </div>
 
-  </section>
+      </form>
+
+    </section>
+  </main>
 
    <script src="./descuentos.js"></script>
 </body>
